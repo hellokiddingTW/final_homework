@@ -126,7 +126,7 @@ table {
 .banner{
     width: 1002px;
     height: 342px;
-    background-image: url(../final_images/banner.png);
+    background-image: url(https://i.imgur.com/kTmwsqM.png);
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -161,7 +161,7 @@ table {
 
 .course li{
    width: 300px;
-   border:2px solid #000;
+   box-shadow:2px 2px 4px 1px #cccccc;
    text-align: center;
    padding-top:20px;
 }
