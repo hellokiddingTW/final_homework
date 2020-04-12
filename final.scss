@@ -1,0 +1,239 @@
+
+@import "reset";
+
+@mixin objCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+};
+
+@mixin textPic{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin formStyle{
+    border-top:1px solid #dddddd;
+        border-bottom:1px solid #dddddd;
+        padding:12px;
+        padding-left:  25px;
+        text-align: left;
+}
+
+//////////web__Setting///////////////////
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+//////////Header__Bar///////////////////
+
+.bar{
+    background:#f6f6f6;
+    margin-top: 3px;
+    .bar__list{
+        display: flex;
+        justify-content: flex-end;
+        
+    }    
+    .facebook{
+        margin: 5px;
+        padding-right:10px;
+        border-right: 2px solid #cccccc;
+        span{
+            color:#4460a0;
+        }
+    }
+    .twitter{
+        margin: 5px;
+        padding-right:10px;
+        span{
+            color:#00aaec;
+        }
+    }
+}
+
+/////////Header__navbar///////
+
+
+.hex__navBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .navBar__logoPic{
+        display:block;
+        background-image: url(/final_images/logo.png);
+        @include textPic;
+        width: 224px;
+        height: 50px;
+    }
+    .navBar__menuList{
+        display:flex;
+        a{
+            display: block;
+            padding:1.5em;
+            color:#48d8af;
+            &:hover{
+                border-bottom: 4px solid #48d8af ;
+            }
+        }
+    }
+}
+    
+
+//////Header__Banner///////
+
+.hex__banner{
+    height: 342px;
+    background-image: url(https://i.imgur.com/kTmwsqM.png);
+    position: relative;
+    .banner__slogen{
+        height: 120px;
+        width: 1000px;
+        background:rgba(0,0,0,0.2);
+        position:absolute;
+        left:0;
+        top:30%;
+        .slogenText{
+            margin:1.2rem;
+            font-size: 30px;
+            color:white;
+        }
+    }
+}
+
+//////content__Course///////
+ 
+.course__item{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-around;
+    .course_list{
+        width:31.333%;
+        box-shadow:2px 2px 4px 1px #cccccc;
+        padding:1rem;
+        @include objCenter();
+        line-height: 1.5;
+    }
+    .item__titleText{
+        font-size: 20px;
+        font-weight:bold;
+        
+    }
+    .JQ__list{
+        list-style:disc;
+        
+    }
+    span{
+        display: inline-block;
+        margin-right:110px;
+    }
+}
+
+
+///////Content__Form//////
+
+.info__title{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.info__list{
+    width: 1000px;
+    th{
+    @include formStyle();
+    background-color: #f7f7f7;
+    } 
+    td{
+    @include formStyle()
+    }
+    .green{
+        color:#42b392
+    }
+}
+
+
+.hex__form{
+    margin-top: 60px;
+    background:linear-gradient(#00644c,#009872);
+    .form__title{
+        font-size: 24px;
+        color:white;
+        text-align: center;
+        padding-top:1.5rem;
+        line-height: 1.5;
+    }
+    .form__textarea{
+        width: 460px;
+        height: 245px;
+        border-radius: 5px;
+        border:none;
+        margin:2rem 1rem;
+    }
+    .form__list{
+        float:right;
+        margin:2rem 1rem;
+        label{
+            color:white;
+            font-size:16px;
+            margin-bottom: 5px;
+        }
+        input{
+            margin-bottom: 20px;
+            margin-top:5px;
+            padding: 6px;
+            width: 460px;
+            border-radius: 5px;
+            font-size:14px;
+            border:none;
+        }
+        .btn{
+            float:right;
+            padding:0.4rem 1.5rem;
+            border:none;
+            border-radius: 3px;
+            color:white;
+            background:#00cc99;
+            font-size: 15px;
+            &:hover{
+                background:#df3380;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+/////////Footer///////
+
+
+
+.footer{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    .footer__text {
+        line-height:1.5;
+        a{
+            color:#df3380;
+            &:hover{
+                color:#000
+            }
+        }
+    }
+}
+
+

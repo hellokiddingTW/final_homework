@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>六角學院｜為您奠定良好的前端基礎</title>
     <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
-    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="css/final.css">
 </head>
 <body>
 <div class="wrap">
     <div class="header">
         <div class="bar">
-            <ul>
+            <ul class="bar__list">
                 <li class="facebook">
                     <a href="https://www.facebook.com/hexschool/" title="前往六角學院粉絲團">
                     <img src="final_images/facebookIcon.png" alt="fb">
@@ -26,44 +26,46 @@
                 </li>
             </ul>
         </div>
-        <div class="logo">
-            <a href="https://www.hexschool.com/" title="前往六角院">
-                <img src="final_images/logo.png" alt="">
-            </a>
-            <ul >
-                <li><a href="https://www.hexschool.com/"> 首頁</a></li>
-                <li><a href="https://www.hexschool.com/courses/"> 產品介紹</a></li>
-                <li><a href="#"> 聯絡我們</a></li>
+        <div class="hex__navBar">
+            <h1><a class="navBar__logoPic" href="https://www.hexschool.com/" title="前往六角院">六角學院</a></h1>
+            <ul class="navBar__menuList">
+                <li><a href="https://www.hexschool.com/" title="六角首頁">首頁</a></li>
+                <li><a href="https://www.hexschool.com/courses/" title="六角課程商品">產品介紹</a></li>
+                <li><a href="#" title="聯絡六角">聯絡我們</a></li>
             </ul>
         </div>    
-        <div class="banner">
-            <div class="slogen">
-            <h2>六角學院
-            <br> 
-            讓您奠定良好的前端基礎</h2>
+        <div class="hex__banner">
+            <div class="banner__slogen">
+            <h2 class="slogenText">六角學院</h2>
+            <h2 class="slogenText">讓您奠定良好的前端基礎</h2>
             </div>
        </div>
     </div>
     <div class="content">
-        <div class="course">
-            <ul class="item">
-                <li>
+        <div class="hex__course">
+            <ul class="course__item">
+                <li class=" course_list HTML5">
                 <img src="final_images/html.png" alt="">
-                <h2>Html5 基礎教學</h2><p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p></li>
-                <li>
-                <div class="item">
+                <h2 class="item__titleText">Html5 基礎教學</h2><p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p></li>
+                <li class="course_list RWD">
                 <img src="final_images/rwd.png" alt="">
-                <h2>響應式網站設計</h2><p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p></li>
-                <li>
-                <div class="item">
+                <h2 class="item__titleText">響應式網站設計</h2><p>響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p></li>
+                <li class="course_list JQ">
                 <img src="final_images/jQuery.png" alt="">
-                <h2>jQuery 實戰教學</h2><p>本課程有以下特色<br>．瞭解變數的使用方法<br>．學習並操作 DOM<br>．學習基本數學運算方法<br>．套件的操作及運用</p>
+                <h2 class="item__titleText">jQuery 實戰教學</h2>
+                <p> <span>本課程有以下特色</span></p>
+                <ul>
+                    <li class="JQ__list">瞭解變數的使用方法</li>
+                    <li class="JQ__list">學習並操作 DOM</li>
+                    <li class="JQ__list">學習基本數學運算方法</li>
+                    <li class="JQ__list">套件的操作及運用</li>
+                </ul>
                 </li>
              </ul>
         </div>
-        <div class="info">
-            <div class="info_title">線上及實體課程的差異</div> 
-            <table class="info_content">
+        <div class="hex__info">
+            <div class="info__title">線上及實體課程的差異</div> 
+            <table class="info__list">
                 <tr>
                     <th >項目</th>
                     <th >Hex School 線上課程</th>
@@ -108,47 +110,35 @@
                 </tr>
             </table>
         </div>
-        <div class="form">
-            <div class="form_title">對我們的課程有興趣嗎?<br>
+        <div class="hex__form">
+            <h2 class="form__title">對我們的課程有興趣嗎?<br>
                 歡迎留下您的資料
-            </div>
+            </h2>
             <form action="final.html">
-            <div class="form_content">
-                <div class="form_content_left">
-                    <textarea name="guest_message" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form_content_right">
-                    <div class="form_group">
-                        <label for="person">姓名</label>
-                        <input id="person" type="text" name="person" value="六角講師">
-                    </div>
-                    <div class="form_group">
-                        <label for="phone">電話</label>
-                        <input id="phone" type="text" name="phone"value="0912345678">
-                    </div>
-                    <div class="form_group">
-                        <label for="mail">信箱</label>
-                        <input id="mail" type="text" name="mail" value="hexschool@mail.com">
-                    </div>
-                    <div class="btn">
-                        <button>送出</button>
-                    </div>
-                    </form>
-                </div>
-            </div>
+                <textarea  class="form__textarea" name="message" id="" cols="30" rows="10"></textarea>
+                <ul class="form__list">
+                    <li><label for="person">姓名</label></li>
+                    <li><input id="person" type="text" name="person" value="六角講師"></li>
+                    <li><label for="phone">電話</label></li>
+                    <li><input id="phone" type="text" name="phone"value="0912345678"></li>
+                    <li><label for="mail">信箱</label></li>
+                    <li><input id="mail" type="text" name="mail" value="hexschool@mail.com"></li>
+                    <li><button class="btn">送出</button></li>
+                </ul>
+            </form>
         </div>
     </div>
     <div class="footer">
-        <div class="footer_logo">
+        <div class="footer__logo">
             <a href="https://www.hexschool.com/">
                 <img src="final_images/footerLogo.png" alt=""></a>
         </div>
-        <div class="footer_text">
+        <div class="footer__text">
             聯絡我們：
-            <a class="hex_mail" href="">hexschool@gmail.com</a>
+            <a class="hex__mail" href="">hexschool@gmail.com</a>
             <br>
             電話：
-            <a class="hex_phone" href="">0999123456</a>
+            <a class="hex__phone" href="">0999123456</a>
         </div>
     </div>
 </div>
